@@ -1,0 +1,47 @@
+/* Ejercício de código Javascript de Generation
+Creado por: Germán D Cruz G.
+Portafolio */
+
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Menú de navegación fijo */
+nav {
+    background-color: #191970;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Encabezado */
+.hero {
+    padding-top: 80px; /* Para que no lo cubra el menú */
+    text-align: center;
+    background-color: #eee;
+    padding-bottom: 50px;
+}
+
+/* Secciones */
+section {
+    padding: 30px;
+}
+
+.proyecto {
+    margin-bottom: 20px;
+}
