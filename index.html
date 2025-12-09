@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h2 class="logo">Portafolio</h2>
+        <ul class="nav-links" id="menu">
+            <li><a href="#german">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header class="german" id="german">
+    <div class="german-content">
+        <img src="./IMG/Foto.jpg" alt="Foto de perfil" class="perfil">
+
+        <h1>Germán Darío Cruz Gallego</h1>
+        <h2>Desarrollador Fullstack</h2>
+        <p>Código simple y funcional.</p>
+
+        <div class="german-buttons">
+            <button id="btnContacto" class ="btn-primary">Contáctame</button>
+            <a href="docs/CV-2025.pdf" download class="btn-primary">Descargar CV</a>
+        </div>
+    </div>
+    </header>
+
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>Soy un desarrollador Fullstack apasionado por la tecnología. Trabajo con: HTML, CSS, JavaScript, Java y bases de datos SQL. Me gusta crear soluciones efectivas y profesionales.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Habilidades</h2>
+
+        <div class="skills-grid">
+            <div class="skill">
+                <p>HTML</p>
+            </div>
+            <div class="skill">
+                <p>CSS</p>
+            </div>
+            <div class="skill">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill">
+                <p>Java</p>
+            </div>
+            <div class="skill">
+                <p>SQL</p>
+            </div>
+            <div class="skill">
+                <p>Figma</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+
+        <div class="card">
+            <h3>Proyecto 1</h3>
+            <p>Aplicación web básica para gestión de reservas construida con HTML, CSS y JavaScript en Bootcamp cohorte 10 Generation Colombia.</p>
+        </div>
+
+        <div class="card">
+            <h3>Proyecto 2</h3>
+            <p>CRUD completo de aplicación web conectado a una base de datos.</p>
+        </div>
+
+        <div class="card">
+            <h3>Proyecto 3</h3>
+            <p>Aplicación web básica de e-commerce construida con HTML, CSS y JavaScript en Tecnología de análisis y desarrollo de software de SENA.</p>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+
+        <form action="https://formspree.io/f/xpwebqvb" method="POST" class="form">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo" required>
+            <textarea name="mensaje" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 - Mi Portafolio Fullstack</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
