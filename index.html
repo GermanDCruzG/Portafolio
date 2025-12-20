@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -20,70 +22,111 @@
     </nav>
 
     <header class="german" id="german">
-    <div class="german-content">
-        <img src="./IMG/Foto.jpg" alt="Foto de perfil" class="perfil">
+        <div class="german-content">
+            <img src="./IMG/Foto.jpg" alt="Foto de perfil" class="perfil">
 
-        <h1>Germán Darío Cruz Gallego</h1>
-        <h2>Desarrollador Fullstack</h2>
-        <p>Código simple y funcional.</p>
+            <h1>Germán Darío Cruz Gallego</h1>
+            <h2>Desarrollador Fullstack</h2>
+            <p>Código simple y funcional.</p>
 
-        <div class="german-buttons">
-            <button id="btnContacto" class ="btn-primary">Contáctame</button>
-            <a href="docs/CV-2025.pdf" download class="btn-primary">Descargar CV</a>
+            <div class="german-buttons">
+                <button id="btnContacto" class="btn-primary">Contáctame</button>
+                <a href="docs/CV-2025.pdf" download class="btn-primary">Descargar CV</a>
+            </div>
         </div>
-    </div>
     </header>
 
-    <section id="sobre-mi">
+    <section id="sobre-mi" class="container2">
         <h2>Sobre mí</h2>
-        <p>Soy un desarrollador Fullstack apasionado por la tecnología. Trabajo con: HTML, CSS, JavaScript, Java y bases de datos SQL. Me gusta crear soluciones efectivas y profesionales.</p>
+        <p>Soy un desarrollador Fullstack en formación.</p>
+        <p>Trabajo con: HTML, CSS, JavaScript, Java y bases de datos SQL.</p>
+        <p>Me gusta crear soluciones efectivas y profesionales.</p>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="container3">
         <h2>Habilidades</h2>
 
         <div class="skills-grid">
             <div class="skill">
+                <i class="fa-brands fa-html5"></i>
                 <p>HTML</p>
             </div>
             <div class="skill">
+                <i class="fa-brands fa-css3-alt"></i>
                 <p>CSS</p>
             </div>
             <div class="skill">
+                <i class="fa-brands fa-js"></i>
                 <p>JavaScript</p>
             </div>
             <div class="skill">
+                <i class="fa-brands fa-java"></i>
                 <p>Java</p>
             </div>
             <div class="skill">
+                <i class="fa-solid fa-database"></i>
                 <p>SQL</p>
             </div>
             <div class="skill">
+                <i class="fa-brands fa-github"></i>
+                <p>GitHub</p>
+            </div>
+            <div class="skill">
+                <i class="fa-brands fa-figma"></i>
                 <p>Figma</p>
             </div>
         </div>
     </section>
 
-    <section id="proyectos">
+    <section id="proyectos" class="container4">
         <h2>Proyectos</h2>
+        <div class="proyectos-grid">
+            <div class="card">
+                <div class="card-image">
+                    <h3>sPaw</h3>
+                    <img src="./IMG/spaw.jpg" alt="Foto de proyecto">
+                    <div class="card-overlay">
+                        <p>Aplicación web básica para gestión de reservas. Bootcamp Fullstack Generation Colombia.</p>
+                    </div>
+                </div>
+                <div class="card-buttons">
+                    <a href="#" class="btn btn-primary">Demo</a>
+                    <a href="https://github.com/GermanDCruzG/Portafolio.git" class="btn btn-secondary">GitHub</a>
+                </div>
+            </div>
 
-        <div class="card">
-            <h3>Proyecto 1</h3>
-            <p>Aplicación web básica para gestión de reservas construida con HTML, CSS y JavaScript en Bootcamp cohorte 10 Generation Colombia.</p>
-        </div>
+            <div class="card">
+                <div class="card-image">
+                    <h3>CRUD</h3>
+                    <img src="./IMG/crud.jpg" alt="Foto de proyecto">
+                    <div class="card-overlay">
+                        <p>CRUD completo básico de aplicación web conectado a una base de datos.</p>
+                    </div>
+                </div>
+                <div class="card-buttons">
+                    <a href="#" class="btn btn-primary">Demo</a>
+                    <a href="#" class="btn btn-secondary">GitHub</a>
+                </div>
+            </div>
 
-        <div class="card">
-            <h3>Proyecto 2</h3>
-            <p>CRUD completo de aplicación web conectado a una base de datos.</p>
-        </div>
-
-        <div class="card">
-            <h3>Proyecto 3</h3>
-            <p>Aplicación web básica de e-commerce construida con HTML, CSS y JavaScript en Tecnología de análisis y desarrollo de software de SENA.</p>
+            <div class="card">
+                <div class="card-image">
+                    <h3>Bibi Fitness</h3>
+                    <img src="./IMG/bibifitness.jpg" alt="Foto de proyecto">
+                    <div class="card-overlay">
+                        <p>Aplicación web básica de e-commerce. Tecnología de análisis y desarrollo de software SENA.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-buttons">
+                    <a href="#" class="btn btn-primary">Demo</a>
+                    <a href="#" class="btn btn-secondary">GitHub</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="contacto">
+    <section id="contacto" class="container5">
         <h2>Contacto</h2>
 
         <form action="https://formspree.io/f/xpwebqvb" method="POST" class="form">
@@ -98,7 +141,11 @@
         <p>© 2025 - Mi Portafolio Fullstack</p>
     </footer>
 
+    <a href="https://wa.me/573208711282" class="whatsapp-float" target="_blank" aria-label="Chatea por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
     <script src="script.js"></script>
 </body>
-</html>
 
+</html>
